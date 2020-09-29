@@ -1,0 +1,23 @@
+{
+  "name": "codepen",
+  "version": "1.0.0",
+  "description": "Node Modules to be used for code pen development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeeRob97/codepens.git"
+  },
+  "keywords": [
+    "code",
+    "pen"
+  ],
+  "author": "Lee Robertson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeeRob97/codepens/issues"
+  },
+  "homepage": "https://github.com/LeeRob97/codepens#readme"
+}
