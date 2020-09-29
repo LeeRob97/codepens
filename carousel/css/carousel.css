@@ -1,0 +1,99 @@
+#carousel {
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#carousel .carouselWrapper {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+#carousel .carouselWrapper::before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: url("../images/MainBG.jpg");
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+#carousel .carouselWrapper .prev,
+#carousel .carouselWrapper .next {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    /* bring your own prefixes */
+    transform: translate(0, -50%);
+    padding: 8px 10px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#carousel .carouselWrapper .prev > img,
+#carousel .carouselWrapper .next > img {
+    width: 15px;
+    height: 15px;
+}
+
+#carousel .carouselWrapper .prev:hover,
+#carousel .carouselWrapper .next:hover {
+    opacity: 1;
+}
+
+#carousel .carouselWrapper .prev {
+    left: 10px;
+}
+
+#carousel .carouselWrapper .next {
+    right: 10px;
+}
+
+#carousel .carouselWrapper .carouselSlider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+#carousel .carouselWrapper .carouselSlider .item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#carousel .carouselWrapper .carouselSlider .item > img {
+   object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+#carousel .carouselWrapper .carouselSlider .item .itemCaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 18px;
+    background-color: #F5AD00;
+    font-weight: 600;
+    padding: 10px 0;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    #carousel {
+        height: 350px;
+    }
+}
