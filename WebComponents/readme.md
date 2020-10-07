@@ -11,4 +11,4 @@ how Web Components would compare in:
 
 ## Plans
 While this project is very small and is currently a code pen. I would like to eventually
-build my own web component lifecycle library that can be use universally anywhere.
+build my own web component lifecycle library that can be used universally anywhere.
