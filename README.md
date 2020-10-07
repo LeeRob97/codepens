@@ -1,2 +1,2 @@
 # codepens
-Collection of quick code samples
+Collection of code samples
