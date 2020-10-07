@@ -11,7 +11,7 @@ The base `template` structure:
 |   |-- styles.css 
 |
 |-- js
-|   |-- script.js
+|   |-- scripts.js
 |
 |-- index.html
 ```
